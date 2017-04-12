@@ -42,6 +42,7 @@ Write an application that emails loan alerts.
 ## Bonus points (in order of WOW factor)
 
 * Use of `composer` packages
+* Make emails mobile responsive
 * Use VueJS and SPA (single page application) for all UI. Communication via API only; no page postbacks or refreshes.
 * Use of `yarn`, `webpack`, and `es6` in the build process
 * PHP7 compatibility
