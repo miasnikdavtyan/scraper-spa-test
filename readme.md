@@ -14,27 +14,27 @@ Write an application that emails loan alerts.
 
 ## User Story
 
-Step 1: User visits site and inputs email address.
+### Step 1: User visits site and inputs email address.
 
 ![Step 1](https://raw.githubusercontent.com/benallfree/scraper-spa-test/master/mockups/1.png)
 
-Step 2: User inputs loan alert criteria
+### Step 2: User inputs loan alert criteria
 
 ![Step 2](https://raw.githubusercontent.com/benallfree/scraper-spa-test/master/mockups/2.png)
 
-Step 3: User reaches finishing stage
+### Step 3: User reaches finishing stage
 
 ![Step 3](https://raw.githubusercontent.com/benallfree/scraper-spa-test/master/mockups/3.png)
 
-Step 4: User receives confirmation email
+### Step 4: User receives confirmation email
 
 ![Step 4](https://raw.githubusercontent.com/benallfree/scraper-spa-test/master/mockups/4.png)
 
-Step 5: Background Laravel process queries Zillow for rates and saves them to DB
+### Step 5: Background Laravel process queries Zillow for rates and saves them to DB
 
 ![Step 1](https://raw.githubusercontent.com/benallfree/scraper-spa-test/master/mockups/5.png)
 
-Step 6: Background Laravel process monitors DB for new loan data and sends out alerts.
+### Step 6: Background Laravel process monitors DB for new loan data and sends out alerts.
 
 ![Step 6](https://raw.githubusercontent.com/benallfree/scraper-spa-test/master/mockups/6.png)
 
