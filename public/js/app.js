@@ -1021,21 +1021,23 @@ var app = new Vue({
     data: {
         formstate: {},
         message: 'Hello Vue!',
+        email_added: false,
         model: {
             email: ''
         }
     },
     methods: {
-        firstOrNewEmail: function firstOrNewEmail() {
+        onSubmit: function onSubmit() {
             var _this = this;
 
-            __WEBPACK_IMPORTED_MODULE_0__http_common__["HTTP"].get('/user').then(function (response) {
-                _this.posts = response.data;
-                console.log(_this.posts);
+            console.log(this.model);
+            __WEBPACK_IMPORTED_MODULE_0__http_common__["HTTP"].post('/firstOrNewEmail', this.model).then(function (response) {
+                if (response.data.result.id) {
+                    _this.email_added = true;
+                }
             }).catch(function (e) {
-                _this.errors.push(e);
+                // console.log(e);
             });
-            // this.message = this.message.split('').reverse().join('');
         },
         fieldClassName: function fieldClassName(field) {
             if (!field) {

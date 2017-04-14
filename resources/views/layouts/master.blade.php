@@ -15,15 +15,8 @@
 
     <!-- Styles -->
     <style>
+
         html, body {
-            background-color: #fff;
-            color: black;
-            font-family: 'Raleway', sans-serif;
-            font-weight: bold;
-            height: 100vh;
-            margin: 0;
-        }
-       /* html, body {
             background-color: #fff;
             color: #636b6f;
             font-family: 'Raleway', sans-serif;
@@ -38,7 +31,7 @@
 
         .flex-center {
             align-items: center;
-            display: flex;
+            /*display: flex;*/
             justify-content: center;
         }
 
@@ -72,7 +65,7 @@
 
         .m-b-md {
             margin-bottom: 30px;
-        }*/
+        }
     </style>
 </head>
 <body>

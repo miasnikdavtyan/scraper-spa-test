@@ -33,21 +33,23 @@ const app = new Vue({
     data: {
         formstate: {},
         message: 'Hello Vue!',
+        email_added: false,
         model: {
-            email: '',
+            email: ''
         }
     },
     methods: {
-        firstOrNewEmail: function(){
-            HTTP.get(`/firstOrNewEmail`)
+        onSubmit: function(){
+            console.log(this.model);
+            HTTP.post('/firstOrNewEmail', this.model)
                 .then(response => {
-                    this.posts = response.data;
-                    console.log(this.posts);
+                    if(response.data.result.id){
+                        this.email_added = true;
+                    }
                 })
                 .catch(e => {
-                    this.errors.push(e)
+                    // console.log(e);
                 });
-            // this.message = this.message.split('').reverse().join('');
         },
         fieldClassName: function (field) {
             if(!field) {
